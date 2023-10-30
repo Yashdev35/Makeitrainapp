@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E64A19"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/youHaveId"
+        android:layout_width="171dp"
+        android:layout_height="53dp"
+        android:background="#00F6F6F5"
+        android:backgroundTint="#7B1FA2"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:shadowColor="#1976D2"
+        android:text="@string/you_have"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/moneyValue"
+        android:layout_width="393dp"
+        android:layout_height="101dp"
+        android:fontFamily="@font/aubrey"
+        android:gravity="center|center_horizontal"
+        android:outlineAmbientShadowColor="#689F38"
+        android:text="@string/Money_value"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youHaveId"
+        app:layout_constraintVertical_bias="0.054"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/Makeitrain"
+        style="@style/Widget.Material3.Button.UnelevatedButton"
+        android:layout_width="198dp"
+        android:layout_height="53dp"
+        android:onClick="rainingmethod"
+        android:outlineAmbientShadowColor="#512DA8"
+        android:outlineSpotShadowColor="#EF0A0A"
+        android:shadowColor="#E60A0A"
+        android:text="@string/make_it_rain"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorLink="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639"
+        app:rippleColor="#E11414"
+        app:strokeColor="#E81111" />
+
+    <Button
+        android:id="@+id/Showinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showinginfo"
+        android:text="@string/show_info"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Makeitrain" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="166dp"
+        android:layout_height="154dp"
+        android:background="#D32F2F"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/youHaveId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="191dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="@string/there_is_no_such_thing_as_get_rich_quick"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/Showinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Makeitrain" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
